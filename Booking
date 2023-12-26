@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=BioRhyme' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knights Driving Academy - Booking</title>
+    <style>
+        html, body {
+            margin: 0;
+            background: linear-gradient(to left, #09203f 0%, #5891bd 100%);
+            background-size: auto;
+            height: auto;
+            color: aliceblue;
+            font-size: 22px;
+            background-color: #BF94E4;
+        }
+
+        .nav {
+            background: linear-gradient(to left, #09203f 0%, #5891bd 100%);
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 12px 12px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .nav a:hover {
+            background-color: rgb(11, 132, 145);
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 90%;
+            font-size: smaller;
+        }
+
+        .booking-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 400px;
+            padding: 20px;
+            background-color: #09203f;
+            border-radius: 5px;
+        }
+
+        .booking-form label {
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .booking-form input[type="text"],
+        .booking-form input[type="email"],
+        .booking-form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .booking-form input[type="submit"] {
+            background-color: #BF94E4;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .booking-form input[type="submit"]:hover {
+            background-color: rgb(11, 132, 145);
+        }
+
+        .Heading {
+            font-family: BioRhyme;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <a href="/Home/Home.html">Home</a>
+        <a href="/About/About.html">About</a>
+        <a href="/Booking/Booking.html">Booking</a>
+        <a href="/Testimonies/Testimonies.html">Testimonies</a>
+    </div>
+    <div class="container">
+        <div class="header">
+            <h1>Knights<br>Driving Academy</h1>
+        </div>
+        <div class="booking-form">
+            <h2 class="Heading">Book a Driving Lesson</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="lesson-type">Lesson Type:</label>
+                <select id="lesson-type" name="lesson-type" required>
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                </select>
+
+                <input type="submit" value="Book Now">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
